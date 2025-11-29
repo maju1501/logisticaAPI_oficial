@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.vscode
+
+# Build folders
+bin/
+obj/
+
+# Temp files
+*.tmp
+*.log
+*.db
+*.jfm
+
+# Publish settings
+appsettings.Development.json

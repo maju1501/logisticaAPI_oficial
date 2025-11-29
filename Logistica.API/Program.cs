@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 // -----------------------------------------------------------
 // 2. Banco de Dados - MySQL (banco: logistica)
 // -----------------------------------------------------------
-// Necess·rio: Pomelo.EntityFrameworkCore.MySql
+// Necess√°rio: Pomelo.EntityFrameworkCore.MySql
 builder.Services.AddDbContext<LogisticaContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -42,7 +42,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "Logistica API",
         Version = "v1",
-        Description = "API de LogÌstica desenvolvida em C# .NET"
+        Description = "API de Log√≠stica desenvolvida em C# .NET"
     });
 });
 
@@ -70,5 +70,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+app.Urls.Add("http://0.0.0.0:8080");
 
 app.Run();
